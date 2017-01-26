@@ -9,10 +9,10 @@ function setup() {
 }
 function draw() {
     var x = 0;
-    var y = 0;
+    var y = height;
     var isShifted = false;
     
-    while(y <= height){
+    while(y >= 0){
         if(isShifted){
             x = circleRadius;
         }
@@ -26,7 +26,7 @@ function draw() {
         x= x + circleDiametar;
     }
     
-    y= y + circleRadius;
+    y= y - circleRadius;
     isShifted = !isShifted;
     }
     
