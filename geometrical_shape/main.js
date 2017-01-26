@@ -43,3 +43,9 @@ function draw() {
      
    
 }
+function keyPressed(){
+    if(keyCode == 115 || keyCode == 83){
+        saveCanvas("Geometric Pattern", "png");
+    }
+    return false;
+}
