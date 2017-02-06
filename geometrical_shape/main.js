@@ -29,7 +29,9 @@ function draw() {
             x = 0;
         }
     while(x <= width){
+        if(keyCode == 65){
         fill(color(rVal,gVal,bVal));
+        }
         stroke(color(rVal,gVal,bVal));
         ellipse(x, y, circleDiametar,circleDiametar);
         
